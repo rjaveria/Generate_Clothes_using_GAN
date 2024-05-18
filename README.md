@@ -11,8 +11,9 @@ Numpy,Tensorflow,matplotlib,keras
 ## Building Generator
 The generator is designed to create images from a latent vector of 100 dimensions.The generator is defined as a Sequential model, which means the layers are stacked 
 in sequence .The architecture consists of several convolutional transpose layers (also known as deconvolutional layers) followed by batch normalization and rectified 
-linear unit (ReLU) activation functions.. 
-# Input Layer: The generator takes a latent vector of 100 dimensions as input.
+linear unit (ReLU) activation functions.
+
+Input Layer: The generator takes a latent vector of 100 dimensions as input.
 - Block 1: A convolutional transpose layer upsamples the input to a larger spatial resolution. It is followed by batch normalization and ReLU activation.
 - Block 2: Another convolutional transpose layer further upsamples the feature maps. Again, batch normalization and ReLU activation are applied.
 - Block 3: Similar to Block 2, this block performs additional upsampling using a convolutional transpose layer, followed by batch normalization and ReLU activation.
